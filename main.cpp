@@ -5,5 +5,5 @@
 
 int main ()
 {
-    std::cout<<"Bonjour";
+    std::cout<<"Bonjour coucou";
 }
