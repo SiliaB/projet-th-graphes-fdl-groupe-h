@@ -1,4 +1,3 @@
-
 #ifndef TP2_TG_SOMMET_H
 #define TP2_TG_SOMMET_H
 
@@ -14,8 +13,11 @@ private:
     std::string nom;
 
 public:
+    Sommet(int num,int capacite);
     Sommet(int num);
     int getNumero() const;
+    std::string getNom() const;
+    int getCapacite() const;
     int setNumero(int newNumero);
     void addSuccesseur(const Sommet* succ);
     const std::vector<const Sommet*>& getSuccesseurs() const;

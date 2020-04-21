@@ -1,11 +1,7 @@
-//
-// Created by morga on 20/04/2020.
-//
-
 #include "Sommet.h"
 
-Sommet::Sommet(int num) : m_numero{num} {}
-
+Sommet::Sommet(int num,int capacite) : m_numero{num},capacite{capacite} {}
+Sommet::Sommet(int num) : m_numero{num},capacite{capacite},nom{nom} {}
 
 void Sommet::addSuccesseur(const Sommet* succ) {
     m_successeurs.push_back(succ);
@@ -18,7 +14,12 @@ const std::vector<const Sommet*>& Sommet::getSuccesseurs() const {
 int Sommet::getNumero() const {
     return m_numero;
 }
-
+std::string Sommet::getNom() const {
+    return nom;
+}
+int Sommet::getCapacite() const {
+    return capacite;
+}
 
 int Sommet::setNumero(int newNumero) {
     return m_numero=newNumero;
