@@ -10,7 +10,7 @@ int main() {
     Graphe g{"../graphe.txt"};
     g.afficher();
 
-    std::cout<<"test"<< std::endl;
+    std::cout<<"test SILIA"<< std::endl;
 
 
     return 0;
