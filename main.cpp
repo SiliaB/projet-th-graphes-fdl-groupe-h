@@ -10,6 +10,8 @@ int main() {
     Graphe g{"../graphe.txt"};
     g.afficher();
 
+    std::cout<<"test"<< std::endl;
+
 
     return 0;
 }
